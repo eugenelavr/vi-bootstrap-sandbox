@@ -1,9 +1,10 @@
 @media screen and (min-width: 320px) {
   .header-top-wrapper{
     position: fixed;
-    left: 15px;
-    right: 15px;
+    left: 0;
+    right: 0;
     max-width: 1440px;
+    z-index: 9999;
   }
 
   .header-top {
@@ -13,7 +14,6 @@
     background: #000;
 
     .header-top__logo {
-        margin-left: -15px;
 
       img {
         width: 175px;
@@ -25,7 +25,7 @@
     .navbar-collapse {
       position: absolute;
       width: 768px;
-      top: 87px;
+      top: 86px;
       right: 0;
       margin-right: -26px;
       padding-right: 41px;
@@ -100,4 +100,11 @@
 
   }
   
+}
+
+@media screen and (min-width: 1440px) {
+  .header-top-wrapper {
+    left: 50%;
+    margin-left: -720px;
+  }
 }

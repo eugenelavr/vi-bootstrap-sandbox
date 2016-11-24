@@ -1,22 +1,23 @@
 @charset "UTF-8";
 @font-face {
   font-family: "AzoSansBold";
-  src: url("./../../dist/fonts/AzoSans-BoldWeb.eot"); }
-@font-face {
-  font-family: "AzoSansBold";
-  src: url("./../../dist/fonts/AzoSans-BoldWeb.woff"); }
-@font-face {
-  font-family: "AzoSansRegular";
-  src: url("./../../dist/fonts/AzoSans-RegularWeb.woff") format("woff"); }
+  src: url("./../../dist/fonts/AzoSans-BoldWeb.eot");
+  src: url("./../../dist/fonts/AzoSans-BoldWeb.woff") format("woff");
+  font-weight: bold; }
 @font-face {
   font-family: "AzoSansRegular";
-  src: url("./../../dist/fonts/AzoSans-RegularWeb.eot"); }
+  src: url("./../../dist/fonts/AzoSans-RegularWeb.eot");
+  src: url("./../../dist/fonts/AzoSans-RegularWeb.woff") format("woff");
+  font-weight: normal; }
 @font-face {
   font-family: "AzoSansMedium";
-  src: url("./../../dist/fonts/AzoSans-MediumWeb.eot"); }
+  src: url("./../../dist/fonts/AzoSans-MediumWeb.eot");
+  src: url("./../../dist/fonts/AzoSans-MediumWeb.woff") format("woff");
+  font-weight: normal; }
 @font-face {
-  font-family: "AzoSansMedium";
-  src: url("./../../dist/fonts/AzoSans-MediumWeb.woff"); }
+  font-family: "AzoSansLight";
+  src: url("./../../dist/fonts/AzoSans-LightWeb.eot");
+  src: url("./../../dist/fonts/AzoSans-LightWeb.woff") format("woff"); }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1127,8 +1128,8 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: transparent;
+  border: 1px solid transparent;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -4345,8 +4346,8 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: transparent;
+  border: 1px solid transparent;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
@@ -4360,7 +4361,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #333333; }
+    color: #fff; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -5838,24 +5839,23 @@ main {
 @media screen and (min-width: 320px) {
   .header-top-wrapper {
     position: fixed;
-    left: 15px;
-    right: 15px;
-    max-width: 1440px; }
+    left: 0;
+    right: 0;
+    max-width: 1440px;
+    z-index: 9999; }
 
   .header-top {
     position: relative;
     padding: 16px 10px;
     border-bottom: 1px solid #1d3464;
     background: #000; }
-    .header-top .header-top__logo {
-      margin-left: -15px; }
-      .header-top .header-top__logo img {
-        width: 175px;
-        height: auto; }
+    .header-top .header-top__logo img {
+      width: 175px;
+      height: auto; }
     .header-top .navbar-collapse {
       position: absolute;
       width: 768px;
-      top: 87px;
+      top: 86px;
       right: 0;
       margin-right: -26px;
       padding-right: 41px;
@@ -5898,6 +5898,10 @@ main {
     color: #fff; }
   .header-top .header-top__logo {
     margin-left: 0; } }
+@media screen and (min-width: 1440px) {
+  .header-top-wrapper {
+    left: 50%;
+    margin-left: -720px; } }
 @media screen and (min-width: 320px) {
   section.entry .jumbotron {
     padding-left: 0;
@@ -5917,12 +5921,19 @@ main {
       font-family: AzoSansRegular; }
   @keyframes arrow-down-up {
     from {
-      margin-top: 90px; }
+      top: 0; }
     to {
-      margin-top: 94px; } }
+      top: 5px; } }
+    section.entry .jumbotron .arrow {
+      position: relative;
+      display: block;
+      margin-top: 90px; }
     section.entry .jumbotron .arrow img {
+      position: absolute;
       width: 18px;
-      margin-top: 90px;
+      top: 0;
+      left: 50%;
+      margin-left: -9px;
       height: auto;
       animation: arrow-down-up .7s linear infinite alternate; } }
 @media screen and (min-width: 768px) {
@@ -5933,5 +5944,27 @@ main {
   section.entry .jumbotron p:first-of-type {
     font-size: 25px;
     margin-top: 60px; } }
+@media screen and (min-width: 320px) {
+  .vi-in-numbers h2 {
+    margin-bottom: 45px;
+    font-family: AzoSansRegular;
+    font-size: 25px;
+    text-align: center;
+    color: #fff; }
+  .vi-in-numbers h3 {
+    font-family: AzoSansRegular;
+    font-size: 21px;
+    text-align: center; }
+  .vi-in-numbers .thumbnail img {
+    width: 96px;
+    height: auto; }
+  .vi-in-numbers .thumbnail p {
+    font-family: AzoSansLight;
+    font-size: 15px;
+    text-align: center; }
+  .vi-in-numbers .thumbnail .caption {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /*# sourceMappingURL=styles.css.map */

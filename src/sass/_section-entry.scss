@@ -26,16 +26,25 @@
 
       @keyframes arrow-down-up {
         from {
-          margin-top: 90px;
+          top: 0;
         }
         to {
-          margin-top: 94px;
+          top: 5px;
         }
       }
 
-      .arrow img {
-        width: 18px;
+      .arrow {
+        position: relative;
+        display: block;
         margin-top: 90px;
+      }
+
+      .arrow img {
+        position: absolute;
+        width: 18px;
+        top: 0;
+        left: 50%;
+        margin-left: -9px;
         height: auto;
         animation: arrow-down-up .7s linear infinite alternate;
       }

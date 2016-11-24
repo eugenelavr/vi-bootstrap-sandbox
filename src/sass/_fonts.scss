@@ -1,29 +1,26 @@
 @font-face {
   font-family: "AzoSansBold";
   src: url("./../../dist/fonts/AzoSans-BoldWeb.eot");
-}
-
-@font-face {
-  font-family: "AzoSansBold";
-  src: url("./../../dist/fonts/AzoSans-BoldWeb.woff");
-}
-
-@font-face {
-  font-family: "AzoSansRegular";
-  src: url("./../../dist/fonts/AzoSans-RegularWeb.woff") format("woff");
+  src: url("./../../dist/fonts/AzoSans-BoldWeb.woff") format("woff");
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "AzoSansRegular";
   src: url("./../../dist/fonts/AzoSans-RegularWeb.eot");
+  src: url("./../../dist/fonts/AzoSans-RegularWeb.woff") format("woff");
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "AzoSansMedium";
   src: url("./../../dist/fonts/AzoSans-MediumWeb.eot");
+  src: url("./../../dist/fonts/AzoSans-MediumWeb.woff") format("woff");
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "AzoSansMedium";
-  src: url("./../../dist/fonts/AzoSans-MediumWeb.woff");
+  font-family: "AzoSansLight";
+  src: url("./../../dist/fonts/AzoSans-LightWeb.eot");
+  src: url("./../../dist/fonts/AzoSans-LightWeb.woff") format("woff");
 }
