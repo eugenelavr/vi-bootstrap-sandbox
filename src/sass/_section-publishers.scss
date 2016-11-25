@@ -1,0 +1,38 @@
+@media screen and (min-width: 320px) {
+
+  section.publishers {
+
+    margin-top: 100px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .thumbnail {
+
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+
+      h3 {
+        margin-left: -15px;
+        margin-right: -15px;
+        text-align: center;        
+      }
+
+      p {
+        font-family: AzoSansLight;
+        font-size: 15px;
+        text-align: center;
+      }
+
+      img {
+        width: 100px;
+        height: auto;
+      }
+
+    }
+
+  }
+
+}
