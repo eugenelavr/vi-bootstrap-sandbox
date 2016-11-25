@@ -5970,5 +5970,25 @@ main {
     color: #fff; }
     section.vi p span {
       color: #fff200; } }
+@media screen and (min-width: 320px) {
+  section.advertisers {
+    margin-top: 100px; }
+    section.advertisers h2 {
+      text-align: center; }
+    section.advertisers .thumbnail {
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto; }
+      section.advertisers .thumbnail h3 {
+        margin-left: -15px;
+        margin-right: -15px;
+        text-align: center; }
+      section.advertisers .thumbnail p {
+        font-family: AzoSansLight;
+        font-size: 15px;
+        text-align: center; }
+      section.advertisers .thumbnail img {
+        width: 100px;
+        height: auto; } }
 
 /*# sourceMappingURL=styles.css.map */
