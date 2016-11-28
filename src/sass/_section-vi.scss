@@ -1,19 +1,14 @@
 @media screen and (min-width: 320px) {
   section.vi {
 
-    // h2 {
-    //   margin-bottom: 90px;
-    //   text-align: center;
-    // }
-
     p {
       max-width: 540px;
       margin-left: auto;
       margin-right: auto;
-      // font-family: AzoSansLight;
-      // font-size: 15px;
-      // line-height: 22.5px;
-      // color: #fff;
+      font-family: AzoSansLight;
+      font-size: 15px;
+      line-height: 22.5px;
+      color: #fff;
 
         span {
           color: #fff200;
@@ -28,13 +23,10 @@
 
   section.vi {
 
-    // h2 {
-    //   font-size: 40px;
-    // }
-
     p {
       font-size: 22px;
       line-height: 29px;
+      margin-bottom: 22px;
     }
 
   }

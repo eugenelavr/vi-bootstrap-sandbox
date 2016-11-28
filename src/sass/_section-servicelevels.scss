@@ -2,50 +2,13 @@
 
   section.service-levels {
 
-    // margin-top: 100px;
-
-    // .row {
-    //   margin-top: 50px;
-    // }
-
-    p {
+    .service-levels__intro p {
       font-family: AzoSansLight;
       font-size: 16px;
-      line-height: 26px;
       text-align: center;
       color: #fff;
     }
-
-    // h2 {
-    //   margin-bottom: 90px;
-    //   text-align: center;
-    // }
-
-    // .thumbnail {
-
-    //   max-width: 768px;
-    //   margin-left: auto;
-    //   margin-right: auto;
-
-    //   h3 {
-    //     margin-left: -15px;
-    //     margin-right: -15px;
-    //     text-align: center;        
-    //   }
-
-    //   p {
-    //     font-family: AzoSansLight;
-    //     font-size: 15px;
-    //     text-align: center;
-    //   }
-
-    //   img {
-    //     width: 100px;
-    //     height: auto;
-    //   }
-
-    // }
-
+  
   }
 
 }
@@ -54,19 +17,9 @@
 
   section.service-levels {
 
-    p {
+    .service-levels__intro p {
       font-size: 20px;
     }
-
-    // h2 {
-    //   font-size: 40px;
-    // }
-
-    // .thumbnail {
-    //   p {
-    //     font-size: 16px;
-    //   }
-    // }
 
   }
 

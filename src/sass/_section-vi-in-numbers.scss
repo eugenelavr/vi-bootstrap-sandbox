@@ -1,53 +1,12 @@
-@media screen and (min-width: 320px) {
-  section.vi-in-numbers {
-
-    // h2 {
-    //   margin-bottom: 90px;
-    //   text-align: center;
-    // }
-
-    // h3 {
-    //   text-align: center;
-    // }
-
-    // .thumbnail {
-
-    //   img {
-    //     width: 96px;
-    //     height: auto;
-    //   }
-
-    //   p {
-    //     font-family: AzoSansLight;
-    //     font-size: 15px;
-    //     text-align: center;
-    //   }
-
-    //   .caption {
-    //     max-width: 250px;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //   }
-
-    // }
-
-  }
-}
-
 @media screen and (min-width: 768px) {
 
   section.vi-in-numbers {
 
-    // h2 {
-    //   font-size: 40px;
-    // }
+    .row:last-child .caption {
+      padding-top: 0;
+      margin-top: 42px;
+    }
 
-    // .thumbnail {
-    //   p {
-    //     font-size: 16px;
-    //   }
-    // }
-    
   }
 
 }
