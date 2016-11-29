@@ -12,11 +12,16 @@
       
       img {
         width: 75px;
-        height: 75px;
+        height: auto;
       }
     }
 
     .thumbnail-main {
+
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 70px;
 
       h3 {
         color: #fff200;
@@ -36,10 +41,12 @@
 
       .thumbnail-main____links {
         margin-right: -20px;
+        text-align: center;
 
         img {
-          display: inline;
+          display: inline-block;
           width: 30px;
+          height: auto;
 
           &:first-child {
             margin-right: 6px;
@@ -50,6 +57,281 @@
 
     }
 
+    .team__small-icons {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    #team .meet-the-team {
+    width: 500px;
+    height: 550px;
+    position: relative;
+  }
+
+  #team .intro {
+    margin-top: 100px;
+  }
+
+  .meet-the-team .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 170px;
+    margin: -85px 0 0 -50px;
+    cursor: pointer;
+  }
+  #fullpage .section .meet-the-team * {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  #team h1 {
+    position: relative;
+    z-index: 100;
+  }
+
+  .meet-the-team .wheel-item-image {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: center center/100% 100%;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .meet-the-team .active.circle {
+    width: 300px;
+    height: 300px;
+    margin: -180px 0 0 -150px;
+    cursor: default;
+  }
+
+  .meet-the-team .active .wheel-item-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .meet-the-team .inner {
+    margin-top: 10px;
+    max-height: 20px;
+    overflow: hidden;
+  }
+  .meet-the-team .active .inner {
+    max-height: 100px;
+  }
+  .meet-the-team .inner p,
+  .meet-the-team .inner h2 {
+    margin: 0;
+  }
+  .meet-the-team .inner .function {
+    font-size: 1.5rem;
+    color: #fff200;
+  }
+
+  .meet-the-team .inner h2 {
+    font-size: 2.1rem;
+    color: #fff200;
+    font-family: AzoSansBold;
+    font-weight: normal;
+  }
+  .meet-the-team .inner p.description {
+    font-size: 1.7rem;
+    margin: 4px 0 11px;
+  }
+  .meet-the-team .active .inner .function {
+    display: none;
+  }
+  #team .meet-the-team .links,
+  #team .meet-the-team .description,
+  #team .meet-the-team .inner h2 {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  #team .meet-the-team .active .links,
+  #team .meet-the-team .active .description,
+  #team .meet-the-team .active .inner h2 {
+    opacity: 1;
+    transition-delay: 1500ms;
+    transition-duration: 300ms;
+  }
+  .meet-the-team .links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    text-indent: -300px;
+    margin-left: 15px;
+  }
+
+  .meet-the-team .links .mail {
+    background: url(../images/team-mail@2x.png) 50% 50%/30px 21px no-repeat;
+
+  }
+  .meet-the-team .links .linkedin {
+    background: url(../images/vi_team_linkedin_01.svg) 0 0/100% 100% no-repeat;
+    margin-left: 0;
+  }
+
+  #fullpage #team .wheel-item-image span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 300ms linear;
+  }
+
+  #fullpage #team .wheel-item-image .normal,
+  #fullpage #team .wheel-item-image.hover .hover,
+  #fullpage #team .active .wheel-item-image .active-normal,
+  #fullpage #team .active .wheel-item-image.hover .active-hover {
+    opacity: 1;
+  }
+  #fullpage #team .wheel-item-image.hover .normal,
+  #fullpage #team .active .wheel-item-image .normal,
+  #fullpage #team .active .wheel-item-image.hover .hover,
+  #fullpage #team .active .wheel-item-image.hover .active-normal {
+    opacity: 0;
+  }
+
+  /* KAI */
+
+  #team .kai .wheel-item-image .hover {
+    background-image: url(../images/team/Kai/profile-large.jpg);
+  }
+
+  #team .kai .active-hover {
+    background-image: url(../images/team/Kai/portrait-full-large.jpg);
+  }
+
+  #team .kai .normal {
+    background-image: url(../images/team/Kai/icon-large.png);
+  }
+
+  #team .kai .active-normal {
+    background-image: url(../images/team/Kai/portrait-large.jpg);
+  }
+
+  /* JOERG */
+
+  #team .joerg .wheel-item-image .hover {
+    background-image: url(../images/team/Joerg/profile-large.jpg);
+  }
+
+  #team .joerg .active-hover {
+    background-image: url(../images/team/Joerg/portrait-full-large.jpg);
+  }
+
+  #team .joerg .normal {
+    background-image: url(../images/team/Joerg/joerg.svg);
+  }
+
+  #team .joerg .active-normal {
+    background-image: url(../images/team/Joerg/portrait-large.jpg);
+  }
+
+  /* CHRIS */
+
+  #team .chris .wheel-item-image .hover {
+    background-image: url(../images/team/Chris/profile-large.jpg);
+  }
+
+  #team .chris .active-hover {
+    background-image: url(../images/team/Chris/portrait-full-large.jpg);
+  }
+
+  #team .chris .normal {
+    background-image: url(../images/team/Chris/icon-large.png);
+  }
+
+  #team .chris .active-normal {
+    background-image: url(../images/team/Chris/portrait-large.jpg);
+  }
+
+  /* ALEX */
+
+  #team .alex .wheel-item-image .hover {
+    background-image: url(../images/team/Alex/profile-large.jpg);
+  }
+
+  #team .alex .active-hover {
+    background-image: url(../images/team/Alex/portrait-full-large.jpg);
+  }
+
+  #team .alex .normal {
+    background-image: url(../images/team/Alex/icon-large.png);
+  }
+
+  #team .alex .active-normal {
+    background-image: url(../images/team/Alex/portrait-large.jpg);
+  }
+
+
+  /* STEVE */
+
+  #team .steve .wheel-item-image .hover {
+    background-image: url(../images/team/Steve/profile-large.jpg);
+  }
+
+  #team .steve .active-hover {
+    background-image: url(../images/team/Steve/portrait-full-large.jpg);
+  }
+
+  #team .steve .normal {
+    background-image: url(../images/team/Steve/icon-large.png);
+  }
+
+  #team .steve .active-normal {
+    background-image: url(../images/team/Steve/portrait-large.jpg);
+  }
+
+
+  /* WICKY */
+
+  #team .wicky .wheel-item-image .hover {
+    background-image: url(../images/team/Wicky/profile-large.jpg);
+  }
+
+  #team .wicky .active-hover {
+    background-image: url(../images/team/Wicky/portrait-full-large.jpg);
+  }
+
+  #team .wicky .normal {
+    background-image: url(../images/team/Wicky/icon-large.png);
+  }
+
+  #team .wicky .active-normal {
+    background-image: url(../images/team/Wicky/portrait-large.jpg);
+  }
+
+  /* TILMAN */
+
+  #team .tilman .wheel-item-image .hover {
+    background-image: url(../images/team/Tilman/profile-large.jpg);
+  }
+
+  #team .tilman .active-hover {
+    background-image: url(../images/team/Tilman/portrait-full-large.jpg);
+  }
+
+  #team .tilman .normal {
+    background-image: url(../images/team/Tilman/icon-large.png);
+  }
+
+  #team .tilman .active-normal {
+    background-image: url(../images/team/Tilman/portrait-large.jpg);
   }
 
 }
