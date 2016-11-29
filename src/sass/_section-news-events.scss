@@ -2,6 +2,10 @@
 
   section.news, section.events {
 
+    max-width: 665px;
+    margin-left: auto;
+    margin-right: auto;
+
     ul {
       padding-left: 0;
     }
@@ -30,6 +34,29 @@
       font-family: AzoSansRegular;
       font-size: 14px;
       color: #fff200;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  section.news, section.events {
+
+    h5 {
+      font-size: 17px;
+    }
+
+    .news__link-title {
+      font-family: AzoSansLight;
+      font-size: 24px;
+    }
+
+    .panel-body {
+      p {
+        font-size: 15px;
+      }
     }
 
   }

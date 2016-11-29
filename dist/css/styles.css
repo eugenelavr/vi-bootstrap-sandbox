@@ -6273,23 +6273,35 @@ button.close {
   #team .tilman .active-normal {
     background-image: url(../images/team/Tilman/portrait-large.jpg); } }
 @media screen and (min-width: 320px) {
-  section.news ul, section.events ul {
-    padding-left: 0; }
+  section.news, section.events {
+    max-width: 665px;
+    margin-left: auto;
+    margin-right: auto; }
+    section.news ul, section.events ul {
+      padding-left: 0; }
+    section.news h5, section.events h5 {
+      margin-bottom: 3px;
+      font-family: AzoSansLight;
+      font-size: 12px; }
+    section.news .panel, section.events .panel {
+      border: none; }
+    section.news .panel-body p, section.events .panel-body p {
+      font-family: AzoSansLight;
+      color: #fff; }
+    section.news .news__link-title, section.events .news__link-title {
+      display: block;
+      margin: 10px 0;
+      text-decoration: underline;
+      font-family: AzoSansRegular;
+      font-size: 14px;
+      color: #fff200; } }
+@media screen and (min-width: 768px) {
   section.news h5, section.events h5 {
-    margin-bottom: 3px;
-    font-family: AzoSansLight;
-    font-size: 12px; }
-  section.news .panel, section.events .panel {
-    border: none; }
-  section.news .panel-body p, section.events .panel-body p {
-    font-family: AzoSansLight;
-    color: #fff; }
+    font-size: 17px; }
   section.news .news__link-title, section.events .news__link-title {
-    display: block;
-    margin: 10px 0;
-    text-decoration: underline;
-    font-family: AzoSansRegular;
-    font-size: 14px;
-    color: #fff200; } }
+    font-family: AzoSansLight;
+    font-size: 24px; }
+  section.news .panel-body p, section.events .panel-body p {
+    font-size: 15px; } }
 
 /*# sourceMappingURL=styles.css.map */
