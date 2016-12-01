@@ -6331,6 +6331,7 @@ button.close {
     section.contact .cities {
       position: relative; }
       section.contact .cities .city {
+        position: absolute;
         z-index: 11; }
         section.contact .cities .city:before {
           content: '';
@@ -6342,16 +6343,6 @@ button.close {
           height: 8px;
           border-radius: 4px;
           background: #fff200; }
-      section.contact .cities .cities__new-york {
-        position: absolute; }
-      section.contact .cities .cities__london {
-        position: absolute; }
-      section.contact .cities .cities__zurich {
-        position: absolute; }
-      section.contact .cities .cities__kiev {
-        position: absolute; }
-      section.contact .cities .cities__timisoara {
-        position: absolute; }
     section.contact .tab-content h5 {
       font-family: AzoSansRegular;
       font-size: 15px;
@@ -6414,17 +6405,25 @@ button.close {
     top: 124px;
     left: 317px; }
   section.contact .cities .cities__zurich {
-    top: 141px;
-    left: 338px; }
+    top: 163px;
+    left: 305px; }
     section.contact .cities .cities__zurich:before {
       margin-left: 0;
-      bottom: 14px;
-      right: -11px; }
+      bottom: 22px;
+      right: -11px;
+      left: auto; }
   section.contact .cities .cities__kiev {
-    top: 0;
-    left: 0; }
+    top: 130px;
+    left: 390px; }
   section.contact .cities .cities__timisoara {
-    top: 0;
-    left: 0; } }
+    top: 180px;
+    left: 393px; }
+    section.contact .cities .cities__timisoara:before {
+      bottom: 30px;
+      left: -10px;
+      margin-left: 0; }
+  section.contact .cities .cities__sydney {
+    top: 273px;
+    left: 573px; } }
 
 /*# sourceMappingURL=styles.css.map */
