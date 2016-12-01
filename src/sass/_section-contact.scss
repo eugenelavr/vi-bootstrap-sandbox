@@ -1,6 +1,11 @@
 @media screen and (min-width: 320px) {
 
   section.contact {
+    position: relative;    
+
+    h2 {
+      margin-bottom: 0;
+    }
 
     .nav-tabs {
 
@@ -32,6 +37,46 @@
 
     }
 
+    .cities {
+      position: relative;
+
+      .city {
+        z-index: 11;
+
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          margin-left: -4px;
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+          background: #fff200;
+        }        
+      }
+
+      .cities__new-york {
+        position: absolute;
+      }
+
+      .cities__london {
+        position: absolute;
+      }
+
+      .cities__zurich {
+        position: absolute;
+      }
+
+      .cities__kiev {
+        position: absolute;
+      }
+
+      .cities__timisoara {
+        position: absolute;
+      }
+    }
+
     .tab-content {
 
       h5 {
@@ -60,8 +105,6 @@
       margin-right: auto;
 
       padding: 15px 10px;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #fff;
 
       h6 {
         margin-top: 3px;
@@ -70,8 +113,22 @@
         font-size: 11px;
       }
 
+      .row {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+
+        & > .col-xs-12:last-child {
+          .col-xs-3 {
+            padding: 0;
+          }
+        }
+
+      }
+
       .thumbnail {
         margin-bottom: 0;
+        border: none;
 
         img {
           width: 36px;
@@ -90,8 +147,98 @@
 
   section.contact {
 
-    .contact-links {
-      // text-align: center;
+    footer {
+      .row {
+        border-top: none;
+      }
+    }
+
+    .map {
+      position: relative;
+      min-width: 665px;
+      max-width: 100%;
+      height: auto;
+      z-index: 10;
+    }
+
+    // .cities:before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 1440px;
+    //     height: 500px;
+    //     background: #000;
+    //   }
+
+    .row .col-sm-6 {
+      padding: 0;
+    }
+
+    .row .col-sm-6 {
+
+      div {
+        padding: 0;        
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+    }
+
+    footer {
+      h6 {
+        font-family: AzoSansLight;
+        font-size: 15px;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (min-width:768px) and (max-width: 991px) {
+
+  section.contact {
+
+    .cities {
+
+      h3 {
+        font-size: 15px;
+      }
+
+      .cities__new-york {
+        top: 150px;
+        left: 198px;
+      }
+
+      .cities__london {
+        top: 124px;
+        left: 317px;
+      }
+
+      .cities__zurich {
+        top: 141px;
+        left: 338px;
+
+        &:before {
+          margin-left: 0;
+          bottom: 14px;
+          right: -11px;
+        }
+      }
+
+      .cities__kiev {
+        top: 0;
+        left: 0;
+      }
+
+      .cities__timisoara {
+        top: 0;
+        left: 0;
+      }
     }
 
   }

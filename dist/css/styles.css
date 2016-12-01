@@ -1087,8 +1087,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
-  background-color: #fff; }
+  color: #fff;
+  background-color: #000; }
 
 input,
 button,
@@ -2234,7 +2234,7 @@ th {
   .table > tbody + tbody {
     border-top: 2px solid #ddd; }
   .table .table {
-    background-color: #fff; }
+    background-color: #000; }
 
 .table-condensed > thead > tr > th,
 .table-condensed > thead > tr > td,
@@ -2810,7 +2810,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373; }
+  color: white; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -3622,7 +3622,7 @@ tbody.collapse.in {
         border-color: #eeeeee #eeeeee #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
-      background-color: #fff;
+      background-color: #000;
       border: 1px solid #ddd;
       border-bottom-color: transparent;
       cursor: default; }
@@ -3680,7 +3680,7 @@ tbody.collapse.in {
     .nav-tabs.nav-justified > .active > a:hover,
     .nav-tabs-justified > .active > a:focus,
     .nav-tabs.nav-justified > .active > a:focus {
-      border-bottom-color: #fff; } }
+      border-bottom-color: #000; } }
 
 .tab-content > .tab-pane {
   display: none; }
@@ -5824,15 +5824,14 @@ button.close {
     display: none !important; } }
 @media screen and (min-width: 320px) {
   .wrapper {
-    background: #000; }
-
-  main {
-    margin-top: 103px;
     background-image: url("./../../dist/images/background.jpg");
     background-size: 1440px 500px;
     background-repeat: no-repeat;
     background-position: center 58px;
     background-attachment: fixed; }
+
+  main {
+    margin-top: 103px; }
 
   section {
     margin-top: 100px; }
@@ -5855,7 +5854,10 @@ button.close {
         width: 100px;
         height: 100px; } }
 @media screen and (min-width: 768px) {
-  main {
+  .wrapper {
+    max-width: 1473px;
+    margin-left: auto;
+    margin-right: auto;
     background-position: center 170px; }
 
   section h2 {
@@ -6304,51 +6306,125 @@ button.close {
   section.news .panel-body p, section.events .panel-body p {
     font-size: 15px; } }
 @media screen and (min-width: 320px) {
-  section.contact .nav-tabs {
-    border-bottom: none; }
-    section.contact .nav-tabs li {
-      margin: 15px 0;
-      float: none; }
-      section.contact .nav-tabs li.active a {
-        color: #fff200;
-        background: transparent;
-        border: none; }
-    section.contact .nav-tabs a {
-      padding: 0;
-      border: 0;
-      background: transparent;
-      font-family: AzoSansBold;
-      font-size: 15px;
-      color: #fff; }
-      section.contact .nav-tabs a:hover {
-        color: #fff200; }
-  section.contact .tab-content h5 {
-    font-family: AzoSansRegular;
-    font-size: 15px;
-    color: #fff200; }
-  section.contact .tab-content p {
-    font-family: AzoSansLight;
-    font-family: 15px;
-    color: #fff; }
-  section.contact .tab-content a {
-    color: #fff;
-    text-decoration: underline; }
-  section.contact footer {
-    max-width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 10px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff; }
-    section.contact footer h6 {
-      margin-top: 3px;
-      text-align: center;
-      font-family: AzoSansMedium;
-      font-size: 11px; }
-    section.contact footer .thumbnail {
+  section.contact {
+    position: relative; }
+    section.contact h2 {
       margin-bottom: 0; }
-      section.contact footer .thumbnail img {
-        width: 36px;
-        height: 36px; } }
+    section.contact .nav-tabs {
+      border-bottom: none; }
+      section.contact .nav-tabs li {
+        margin: 15px 0;
+        float: none; }
+        section.contact .nav-tabs li.active a {
+          color: #fff200;
+          background: transparent;
+          border: none; }
+      section.contact .nav-tabs a {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        font-family: AzoSansBold;
+        font-size: 15px;
+        color: #fff; }
+        section.contact .nav-tabs a:hover {
+          color: #fff200; }
+    section.contact .cities {
+      position: relative; }
+      section.contact .cities .city {
+        z-index: 11; }
+        section.contact .cities .city:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          margin-left: -4px;
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+          background: #fff200; }
+      section.contact .cities .cities__new-york {
+        position: absolute; }
+      section.contact .cities .cities__london {
+        position: absolute; }
+      section.contact .cities .cities__zurich {
+        position: absolute; }
+      section.contact .cities .cities__kiev {
+        position: absolute; }
+      section.contact .cities .cities__timisoara {
+        position: absolute; }
+    section.contact .tab-content h5 {
+      font-family: AzoSansRegular;
+      font-size: 15px;
+      color: #fff200; }
+    section.contact .tab-content p {
+      font-family: AzoSansLight;
+      font-family: 15px;
+      color: #fff; }
+    section.contact .tab-content a {
+      color: #fff;
+      text-decoration: underline; }
+    section.contact footer {
+      max-width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px 10px; }
+      section.contact footer h6 {
+        margin-top: 3px;
+        text-align: center;
+        font-family: AzoSansMedium;
+        font-size: 11px; }
+      section.contact footer .row {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0; }
+        section.contact footer .row > .col-xs-12:last-child .col-xs-3 {
+          padding: 0; }
+      section.contact footer .thumbnail {
+        margin-bottom: 0;
+        border: none; }
+        section.contact footer .thumbnail img {
+          width: 36px;
+          height: 36px; } }
+@media screen and (min-width: 768px) {
+  section.contact footer .row {
+    border-top: none; }
+  section.contact .map {
+    position: relative;
+    min-width: 665px;
+    max-width: 100%;
+    height: auto;
+    z-index: 10; }
+  section.contact .row .col-sm-6 {
+    padding: 0; }
+  section.contact .row .col-sm-6 div {
+    padding: 0; }
+  section.contact .row .col-sm-6 img {
+    width: 50px;
+    height: 50px; }
+  section.contact footer h6 {
+    font-family: AzoSansLight;
+    font-size: 15px; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.contact .cities h3 {
+    font-size: 15px; }
+  section.contact .cities .cities__new-york {
+    top: 150px;
+    left: 198px; }
+  section.contact .cities .cities__london {
+    top: 124px;
+    left: 317px; }
+  section.contact .cities .cities__zurich {
+    top: 141px;
+    left: 338px; }
+    section.contact .cities .cities__zurich:before {
+      margin-left: 0;
+      bottom: 14px;
+      right: -11px; }
+  section.contact .cities .cities__kiev {
+    top: 0;
+    left: 0; }
+  section.contact .cities .cities__timisoara {
+    top: 0;
+    left: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
