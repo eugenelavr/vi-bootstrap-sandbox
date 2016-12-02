@@ -95,7 +95,7 @@
         font-size: 11px;
       }
 
-      .row {
+      .row:first-child {
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
         padding: 10px 0;
@@ -181,7 +181,7 @@
 
 }
 
-@media screen and (min-width:768px) and (max-width: 991px) {
+@media screen and (min-width:768px) {
 
   section.contact {
 
@@ -232,6 +232,123 @@
       .cities__sydney {
         top: 273px;
         left: 573px;
+      }
+    
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  section.contact {
+
+    .cities {
+
+      .cities__new-york {
+        top: 206px;
+        left: 270px;
+      }
+
+      .cities__london {
+        top: 177px;
+        left: 426px;
+      }
+
+      .cities__zurich {
+        top: 222px;
+        left: 415px;
+
+        &:before {
+          margin-left: 0;
+          bottom: 22px;
+          right: -11px;
+          left: auto;
+        }
+      }
+
+      .cities__kiev {
+        top: 181px;
+        left: 511px;
+      }
+
+      .cities__timisoara {
+        top: 240px;
+        left: 509px;
+
+        &:before {
+          bottom: 30px;
+          left: -10px;
+          margin-left: 0;
+        }
+      }
+
+      .cities__sydney {
+        top: 365px;
+        left: auto;
+        right: 136px;
+      }
+    
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+   section.contact {
+
+    .cities {
+
+      h3 {
+        font-family: AzoSansRegular;
+        font-size: 24px;
+      }
+
+      .cities__new-york {
+        top: 257px;
+        left: 338px;
+      }
+
+      .cities__london {
+        top: 227px;
+        left: 522px;
+      }
+
+      .cities__zurich {
+        top: 274px;
+        left: 515px;
+
+        &:before {
+          margin-left: 0;
+          bottom: 22px;
+          right: -11px;
+          left: auto;
+        }
+      }
+
+      .cities__kiev {
+        top: 233px;
+        left: 628px;
+      }
+
+      .cities__timisoara {
+        top: 290px;
+        left: 622px;
+
+        &:before {
+          bottom: 30px;
+          left: -10px;
+          margin-left: 0;
+        }
+      }
+
+      .cities__sydney {
+        top: 452px;
+        left: auto;
+        right: 169px;
       }
     
     }
