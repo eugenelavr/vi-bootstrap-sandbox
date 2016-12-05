@@ -6338,7 +6338,8 @@ button.close {
       position: relative; }
       section.contact .cities .city {
         position: absolute;
-        z-index: 11; }
+        z-index: 11;
+        cursor: pointer; }
         section.contact .cities .city:before {
           content: '';
           position: absolute;
@@ -6381,9 +6382,21 @@ button.close {
         border: none; }
         section.contact footer .thumbnail img {
           width: 36px;
-          height: 36px; } }
+          height: 36px; }
+      section.contact footer .policy {
+        font-size: 12px;
+        font-family: AzoSansLight;
+        padding-top: 8px; }
+        section.contact footer .policy a {
+          font-size: 15px;
+          color: #fff;
+          text-decoration: underline; } }
 @media screen and (min-width: 768px) {
-  section.contact footer .row {
+  section.contact h2 {
+    position: relative;
+    margin-bottom: -50px;
+    z-index: 100; }
+  section.contact footer .row:first-child {
     border-top: none; }
   section.contact .map {
     position: relative;
@@ -6400,7 +6413,43 @@ button.close {
     height: 50px; }
   section.contact footer h6 {
     font-family: AzoSansLight;
-    font-size: 15px; } }
+    font-size: 15px; }
+  section.contact .modal {
+    margin-top: 392px; }
+  section.contact .modal-content {
+    border-radius: 0;
+    background: transparent; }
+  section.contact .modal-title {
+    color: #fff200; }
+  section.contact .modal-header {
+    padding: 0; }
+    section.contact .modal-header h4 {
+      font-family: AzoSansBold;
+      font-size: 21px;
+      line-height: 0.6; }
+    section.contact .modal-header .close {
+      opacity: 1;
+      text-shadow: none;
+      color: #fff200;
+      font-family: AzoSansLight;
+      font-size: 32px;
+      line-height: 0.6;
+      font-weight: normal; }
+  section.contact .modal-body {
+    border-bottom: 1px solid #fff;
+    padding: 6px 0;
+    background: #000; }
+    section.contact .modal-body h5 {
+      font-family: AzoSansRegular;
+      font-size: 16px; }
+    section.contact .modal-body img {
+      width: 100%; }
+    section.contact .modal-body p {
+      font-family: AzoSansLight;
+      font-size: 16px; }
+    section.contact .modal-body a {
+      color: #fff;
+      text-decoration: underline; } }
 @media screen and (min-width: 768px) {
   section.contact .cities h3 {
     font-size: 15px; }
@@ -6430,7 +6479,11 @@ button.close {
       margin-left: 0; }
   section.contact .cities .cities__sydney {
     top: 273px;
-    left: 573px; } }
+    left: 573px; }
+  section.contact footer {
+    position: relative;
+    margin-top: -90px;
+    z-index: 100; } }
 @media screen and (min-width: 992px) {
   section.contact .cities .cities__new-york {
     top: 206px;
