@@ -130,6 +130,11 @@
           color: #fff;
           text-decoration: underline;
         }
+
+        div:first-child {
+          margin-bottom: 8px;
+        }
+
       }
 
     }
@@ -177,13 +182,6 @@
         height: 50px;
       }
 
-    }
-
-    footer {
-      h6 {
-        font-family: AzoSansLight;
-        font-size: 15px;
-      }
     }
 
     .modal {
@@ -247,10 +245,21 @@
       
     }
 
-    .policy {
-      a {
+    footer {
 
+      h6 {
+        font-family: AzoSansLight;
+        font-size: 15px;
       }
+
+      .policy {
+        font-size: 15px; 
+
+        div:last-child {
+          text-align: right;
+        }
+      }
+
     }
 
   }

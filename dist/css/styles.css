@@ -6006,22 +6006,24 @@ button.close {
   section.service-levels .service-levels__intro p {
     font-size: 20px; } }
 @media screen and (min-width: 320px) {
-  section.highlight blockquote {
-    max-width: 900px;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding: 35px;
-    border: none;
-    background: #fff200;
-    font-family: AzoSansLight;
-    font-size: 16px;
-    text-align: justify; }
-    section.highlight blockquote footer {
-      font-family: AzoSansBold;
-      font-size: 17px;
-      text-align: right; }
-      section.highlight blockquote footer:before {
-        content: none; } }
+  section.highlight {
+    color: #000; }
+    section.highlight blockquote {
+      max-width: 900px;
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 35px;
+      border: none;
+      background: #fff200;
+      font-family: AzoSansLight;
+      font-size: 16px;
+      text-align: justify; }
+      section.highlight blockquote footer {
+        font-family: AzoSansBold;
+        font-size: 17px;
+        text-align: right; }
+        section.highlight blockquote footer:before {
+          content: none; } }
 @media screen and (min-width: 768px) {
   section.highlight blockquote {
     font-size: 20px;
@@ -6390,7 +6392,9 @@ button.close {
         section.contact footer .policy a {
           font-size: 15px;
           color: #fff;
-          text-decoration: underline; } }
+          text-decoration: underline; }
+        section.contact footer .policy div:first-child {
+          margin-bottom: 8px; } }
 @media screen and (min-width: 768px) {
   section.contact h2 {
     position: relative;
@@ -6411,9 +6415,6 @@ button.close {
   section.contact .row .col-sm-6 img {
     width: 50px;
     height: 50px; }
-  section.contact footer h6 {
-    font-family: AzoSansLight;
-    font-size: 15px; }
   section.contact .modal {
     margin-top: 392px; }
   section.contact .modal-content {
@@ -6449,7 +6450,14 @@ button.close {
       font-size: 16px; }
     section.contact .modal-body a {
       color: #fff;
-      text-decoration: underline; } }
+      text-decoration: underline; }
+  section.contact footer h6 {
+    font-family: AzoSansLight;
+    font-size: 15px; }
+  section.contact footer .policy {
+    font-size: 15px; }
+    section.contact footer .policy div:last-child {
+      text-align: right; } }
 @media screen and (min-width: 768px) {
   section.contact .cities h3 {
     font-size: 15px; }
