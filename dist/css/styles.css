@@ -5830,32 +5830,27 @@ button.close {
     background-position: center 58px;
     background-attachment: fixed; }
 
-  main {
-    margin-top: 103px; }
-
   ul {
     list-style-type: none; }
 
-  section {
-    margin-top: 100px; }
-    section h2 {
-      margin-bottom: 90px;
+  section h2 {
+    margin-bottom: 90px;
+    text-align: center; }
+  section .thumbnail {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto; }
+    section .thumbnail h3 {
+      margin-left: -15px;
+      margin-right: -15px;
       text-align: center; }
-    section .thumbnail {
-      max-width: 768px;
-      margin-left: auto;
-      margin-right: auto; }
-      section .thumbnail h3 {
-        margin-left: -15px;
-        margin-right: -15px;
-        text-align: center; }
-      section .thumbnail p {
-        font-family: AzoSansLight;
-        font-size: 15px;
-        text-align: center; }
-      section .thumbnail img {
-        width: 100px;
-        height: 100px; }
+    section .thumbnail p {
+      font-family: AzoSansLight;
+      font-size: 15px;
+      text-align: center; }
+    section .thumbnail img {
+      width: 100px;
+      height: 100px; }
 
   a.thumbnail:hover {
     border: none; } }
