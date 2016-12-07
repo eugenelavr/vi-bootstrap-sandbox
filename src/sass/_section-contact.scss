@@ -1,7 +1,8 @@
 @media screen and (min-width: 320px) {
 
   section.contact {
-    position: relative;    
+    position: relative;
+    padding-top: 100px;
 
     h2 {
       margin-bottom: 0;
@@ -149,7 +150,7 @@
 
     h2{
       position: relative;
-      margin-bottom: -50px;
+      margin-bottom: -90px;
       z-index: 100;
     }
 
@@ -184,66 +185,66 @@
 
     }
 
-    .modal {
-      margin-top: 392px;
-    }
+    // .modal {
+    //   margin-top: 392px;
+    // }
 
-    .modal-content {
-      border-radius: 0;
-      background: transparent;
-    }
+    // .modal-content {
+    //   border-radius: 0;
+    //   background: transparent;
+    // }
 
-    .modal-title {
-      color: #fff200;
-    }
+    // .modal-title {
+    //   color: #fff200;
+    // }
 
-    .modal-header {
-      padding: 0;
+    // .modal-header {
+    //   padding: 0;
 
-      h4 {
-        font-family: AzoSansBold;
-        font-size: 21px;
-        line-height: 0.6;
-      }
+    //   h4 {
+    //     font-family: AzoSansBold;
+    //     font-size: 21px;
+    //     line-height: 0.6;
+    //   }
 
-      .close {
-        opacity: 1;
-        text-shadow: none;
-        color: #fff200;
-        font-family: AzoSansLight;
-        font-size: 32px;
-        line-height: 0.6;
-        font-weight: normal;
-      }
-    }
+    //   .close {
+    //     opacity: 1;
+    //     text-shadow: none;
+    //     color: #fff200;
+    //     font-family: AzoSansLight;
+    //     font-size: 32px;
+    //     line-height: 0.6;
+    //     font-weight: normal;
+    //   }
+    // }
 
-    .modal-body {
-      border-bottom: 1px solid #fff;
-      padding: 6px 0;
-      background: #000;
-      // box-shadow: 0 0 60px 25px #000;      
+    // .modal-body {
+    //   border-bottom: 1px solid #fff;
+    //   padding: 6px 0;
+    //   background: #000;
+    //   // box-shadow: 0 0 60px 25px #000;      
 
-      h5 {
-        // margin-bottom: 25px;
-        font-family: AzoSansRegular;
-        font-size: 16px;
-      }
+    //   h5 {
+    //     // margin-bottom: 25px;
+    //     font-family: AzoSansRegular;
+    //     font-size: 16px;
+    //   }
       
-      img {
-        width: 100%;
-      }
+    //   img {
+    //     width: 100%;
+    //   }
 
-      p {
-        font-family: AzoSansLight;
-        font-size: 16px;
-      }
+    //   p {
+    //     font-family: AzoSansLight;
+    //     font-size: 16px;
+    //   }
 
-      a {
-        color: #fff;
-        text-decoration: underline;
-      }
+    //   a {
+    //     color: #fff;
+    //     text-decoration: underline;
+    //   }
       
-    }
+    // }
 
     footer {
 
@@ -323,7 +324,7 @@
 
     footer {
       position: relative;
-      margin-top: -90px;
+      margin-top: -130px;
       z-index: 100;
     }
 

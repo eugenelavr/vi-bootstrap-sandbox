@@ -8,18 +8,13 @@ $(document).ready(function () {
                          'advertisers', 
                          'publishers', 
                          'servicelevels', 
-                         'highlight', 
+                         'highlight',
+                         'team',
                          'news',
                          'events',
                          'contact']
   });
 
-  $.ajax({
-    type: "get",
-    url: "https://www.vi.ai/five-short-videos-on-adtech/",
-    dataType: "jsonp",
-    success: function (response) {
-      console.log();
-    }
-  });
+  $('.meet-the-team').veel({});
+
 });
