@@ -18,7 +18,11 @@
 
   section {
 
-    // margin-top: 100px;
+    * {
+      transition: transform, opacity, width, height, margin;
+      transition-duration: 1.5s;
+      transition-timing-function: cubic-bezier(.445,.050,.55,.95);
+    }
 
     h2 {
       margin-bottom: 90px;

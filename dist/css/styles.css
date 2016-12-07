@@ -5833,6 +5833,10 @@ button.close {
   ul {
     list-style-type: none; }
 
+  section * {
+    transition: transform, opacity, width, height, margin;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95); }
   section h2 {
     margin-bottom: 90px;
     text-align: center; }
