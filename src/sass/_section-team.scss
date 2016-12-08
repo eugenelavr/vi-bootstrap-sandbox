@@ -75,6 +75,8 @@
       width: 500px;
       height: 550px;
       position: relative;
+      margin: auto;
+      text-align: center;
     }
 
     .intro {
@@ -129,21 +131,24 @@
       max-height: 100px;
     }
     .meet-the-team .inner p,
-    .meet-the-team .inner h2 {
+    .meet-the-team .inner h3 {
       margin: 0;
     }
     .meet-the-team .inner .function {
+      font-family: AzoSansLight;
       font-size: 1.5rem;
       color: #fff200;
+      text-align: center;
     }
 
-    .meet-the-team .inner h2 {
+    .meet-the-team .inner h3 {
       font-size: 2.1rem;
       color: #fff200;
       font-family: AzoSansBold;
       font-weight: normal;
     }
     .meet-the-team .inner p.description {
+      font-family: AzoSansLight;
       font-size: 1.7rem;
       margin: 4px 0 11px;
     }
@@ -152,14 +157,14 @@
     }
     .meet-the-team .links,
     .meet-the-team .description,
-    .meet-the-team .inner h2 {
+    .meet-the-team .inner h3 {
       opacity: 0;
       transform: scale(1);
     }
 
     .meet-the-team .active .links,
     .meet-the-team .active .description,
-    .meet-the-team .active .inner h2 {
+    .meet-the-team .active .inner h3 {
       opacity: 1;
       transition-delay: 1500ms;
       transition-duration: 300ms;

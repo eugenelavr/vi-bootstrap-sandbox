@@ -1,0 +1,132 @@
+@media screen and (min-width: 768px) {
+
+  section.advertisers {
+
+    .intro {
+      margin-top: 0;
+    }
+
+    .advertiser-veel {
+      width: 500px;
+      height: 550px;
+      position: relative;
+      margin: auto;
+    }
+
+    .advertiser-veel .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      margin: -60px 0 0 -150px;
+      cursor: pointer;
+    }
+
+    h2 {
+      position: relative;
+      margin-top: -50px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 3px black;
+      z-index: 100;
+    }
+
+    h3 {
+      font-size: 2.1rem;
+      margin: 10px 0;
+      font-family: AzoSansMedium;
+      text-align: center;
+    }
+
+    .tv-budgets {
+      background: url(./../../dist/images/vi_icon_universe_RGB_M.svg) center center/100% 100% no-repeat;
+    }
+
+    .reach {
+      background: url(./../../dist/images/vi_icon_side_girl_ponytail_RGB_M.svg) center center/100% 100% no-repeat;
+    }
+
+    .fraud-free {
+      background: url(./../../dist/images/vi_icon_guarantee_RGB_M.svg) center center/100% 100% no-repeat;
+    }
+
+    .advertiser-veel .wheel-item-image {
+      width: 120px;
+      height: 120px;
+      margin: auto;
+      background-position: center center/100% 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 44px rgba(0, 18, 255, .5);
+    }
+
+    .advertiser-veel .active.circle {
+      width: 300px;
+      height: 300px;
+      margin: -150px 0 0 -150px;
+      cursor: default;
+    }
+
+    .advertiser-veel .active .wheel-item-image {
+      width: 300px;
+      height: 300px;
+    }
+
+    .advertiser-veel .animate {
+      transition: all 1.5s cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    }
+
+    .advertiser-veel .wheel-item-text .description {
+      text-align: left;
+      position: relative;
+      opacity: 0;
+      z-index: -1;
+      transform: none;
+      font-size: 1.6rem;
+    }
+
+    .advertiser-veel .wheel-item-text {
+      max-height: 80px;
+      overflow: hidden;
+    }
+    .advertiser-veel .circle:nth-child(1) .wheel-item-text {
+      max-height: 46px;
+    }
+    .advertiser-veel .circle:nth-child(2) .wheel-item-text {
+      max-height: 89px;
+    }
+    .advertiser-veel .active.circle  .wheel-item-text{
+      max-height: 300px;
+    }
+
+    .advertiser-veel .active.circle .description {
+      opacity: 1;
+    }
+    .advertiser-veel .inner {
+      position: relative;
+      font-family: AzoSansLight;      
+    }
+    .advertiser-veel .circle:nth-child(3) .inner {
+      height: 260px;
+    }
+    .advertiser-veel .circle:nth-child(3) .description:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 124px;
+      height: 39.5px;
+      top: 140px;
+      right: 0;
+      background: url(./../../dist/images/whiteops.svg) 0 0/100% 100% no-repeat;
+    }
+    .advertiser-veel .circle:nth-child(3) .description:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 124px;
+      height: 39.5px;
+      top: 140px;
+      background: url(./../../dist/images/img_integral.png) 0 0/100% 100% no-repeat;
+    }
+
+  }
+
+}
