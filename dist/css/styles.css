@@ -5902,7 +5902,7 @@ button.close {
     font-family: AzoSansLight; }
 
   #fp-nav ul li .fp-tooltip.right {
-    right: 25; } }
+    right: 25px; } }
 @media screen and (min-width: 320px) {
   .header-top-wrapper {
     position: fixed;
