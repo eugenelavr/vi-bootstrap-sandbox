@@ -5,11 +5,12 @@
     right: 0;
     max-width: 1440px;
     z-index: 150;
+    box-shadow: 0 77px 80px rgba(0,0,0,.6);
   }
 
   .header-top {
     position: relative;
-    padding: 16px 10px;
+    padding: 16px 15px 16px 10px;
     border-bottom: 1px solid #1d3464;
     background: #000;
 
@@ -82,6 +83,7 @@
 @media screen and (min-width: 768px) {
 
   .header-top {
+    height: 100px;
 
     .navbar-collapse {
       position: static;
@@ -96,6 +98,10 @@
 
     .header-top__logo {
       margin-left: 0;
+    }
+
+    .navbar-nav > li > a {
+      padding-top: 24px;
     }
 
   }

@@ -94,40 +94,6 @@
           imgs.removeClass('animate')} , 1500); // this fixes bug after veel animation
       });
 
-      imgs.mouseenter(function(evt) {
-        if ($('body.mobile').length > 0 || $(this).hasClass('animate')) {
-          return;
-        }
-        var $this = $(this);
-        var $image = $('.wheel-item-image', $this);
-        var $function = $('.function', $this);
-        $image.addClass('hover');
-        if ($this.hasClass('active')) {
-          return;
-        }
-        $this.mousemove(function(evt) {
-          var thisOffset = $this.offset(),
-              mouseOffset = evt.pageX - thisOffset.left,
-              thisCenter = $this.width() / 2,
-              angle = (mouseOffset - thisCenter)*0.6;
-              angle = angle > 45 ? 45 : angle;
-              angle = angle < -45 ? -45 : angle;
-          var transform = 'rotate3d(-0.1, 1, -0.1, {angle}deg) translate3d(0, 0, {z}px)'.replace('{angle}', angle);
-          $image.css({
-            'transform': transform.replace('{z}', '-5'),
-            'transition': 'none'
-          });
-          $function.css({
-            'transform': transform.replace('{z}', '20'),
-            'transition': 'none'
-          });
-        });
-      });
-      imgs.mouseleave(function() {
-        $('.wheel-item-image, .function', $(this)).removeClass('hover').removeAttr('style');
-        $(this).off('mousemove');
-      });
-
     });
   }
 }(jQuery));

@@ -70,6 +70,7 @@
 @media screen and (min-width: 768px) {
 
   section.team {
+    margin-top: -7vh;
 
     .meet-the-team {
       width: 500px;
@@ -80,7 +81,7 @@
     }
 
     .intro {
-      margin-top: 100px;
+      margin-bottom: -120px;
     }
 
     .meet-the-team .circle {
@@ -98,7 +99,8 @@
 
     h2 {
       position: relative;
-      z-index: 100;
+      margin-bottom: 80px;
+      z-index: 9999;
     }
 
     .meet-the-team .wheel-item-image {
