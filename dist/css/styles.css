@@ -5871,7 +5871,38 @@ button.close {
   section h2 {
     font-size: 40px; }
   section .thumbnail p {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  #fp-nav ul li, .fp-slidesNav ul li {
+    margin: 10px;
+    padding: 10px; }
+
+  #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    width: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+    background-color: #fff200; }
+
+  #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    width: 17px;
+    height: 17px;
+    margin: -8px 0 0 -8px; }
+
+  #fp-nav ul li:hover a span {
+    width: 17px;
+    height: 17px;
+    margin: -8px 0 0 -8px; }
+
+  #fp-nav.right {
+    opacity: .2; }
+    #fp-nav.right:hover {
+      opacity: 1; }
+
+  #fp-nav ul li .fp-tooltip {
+    font-family: AzoSansLight; }
+
+  #fp-nav ul li .fp-tooltip.right {
+    right: 25; } }
 @media screen and (min-width: 320px) {
   .header-top-wrapper {
     position: fixed;
@@ -5977,6 +6008,10 @@ button.close {
     line-height: 80px; }
   section.home .jumbotron p:first-of-type {
     font-size: 28px;
+    margin-top: 60px; }
+  section.home .jumbotron .arrow img {
+    width: 40px;
+    margin-left: -20px;
     margin-top: 60px; } }
 @media screen and (min-width: 768px) {
   section.vi-in-numbers .row:last-child .caption {
@@ -6533,39 +6568,41 @@ button.close {
     section.contact footer .policy div:last-child {
       text-align: right; } }
 @media screen and (min-width: 768px) {
-  section.contact .cities h3 {
-    font-size: 15px; }
-  section.contact .cities .cities__new-york {
-    top: 150px;
-    left: 198px; }
-  section.contact .cities .cities__london {
-    top: 124px;
-    left: 317px; }
-  section.contact .cities .cities__zurich {
-    top: 163px;
-    left: 305px; }
-    section.contact .cities .cities__zurich:before {
-      margin-left: 0;
-      bottom: 22px;
-      right: -11px;
-      left: auto; }
-  section.contact .cities .cities__kiev {
-    top: 130px;
-    left: 390px; }
-  section.contact .cities .cities__timisoara {
-    top: 180px;
-    left: 393px; }
-    section.contact .cities .cities__timisoara:before {
-      bottom: 30px;
-      left: -10px;
-      margin-left: 0; }
-  section.contact .cities .cities__sydney {
-    top: 273px;
-    left: 573px; }
-  section.contact footer {
-    position: relative;
-    margin-top: -130px;
-    z-index: 100; } }
+  section.contact {
+    box-shadow: 0 0 1px 150px black; }
+    section.contact .cities h3 {
+      font-size: 15px; }
+    section.contact .cities .cities__new-york {
+      top: 150px;
+      left: 198px; }
+    section.contact .cities .cities__london {
+      top: 124px;
+      left: 317px; }
+    section.contact .cities .cities__zurich {
+      top: 163px;
+      left: 305px; }
+      section.contact .cities .cities__zurich:before {
+        margin-left: 0;
+        bottom: 22px;
+        right: -11px;
+        left: auto; }
+    section.contact .cities .cities__kiev {
+      top: 130px;
+      left: 390px; }
+    section.contact .cities .cities__timisoara {
+      top: 180px;
+      left: 393px; }
+      section.contact .cities .cities__timisoara:before {
+        bottom: 30px;
+        left: -10px;
+        margin-left: 0; }
+    section.contact .cities .cities__sydney {
+      top: 273px;
+      left: 573px; }
+    section.contact footer {
+      position: relative;
+      margin-top: -130px;
+      z-index: 100; } }
 @media screen and (min-width: 992px) {
   section.contact .cities .cities__new-york {
     top: 206px;

@@ -22,17 +22,20 @@ $(document).ready(function () {
       navigation: true,
       keyboardScrolling: true,
       responsiveWidth: 768,
-      navigationTooltips: ['home', 
-                          'intro', 
-                          'vi', 
-                          'advertisers', 
-                          'publishers', 
-                          'servicelevels', 
-                          'highlight',
-                          'team',
-                          'news',
-                          'events',
-                          'contact']
+      navigationTooltips: [
+        'home', 
+        'intro', 
+        'vi', 
+        'advertisers', 
+        'publishers', 
+        'servicelevels', 
+        'highlight',
+        'team',
+        'news',
+        'events',
+        'contact'
+      ],
+      sectionsColor: ['', '', '', '', '', '', '', '', '', '', '#000']
     });
 
   }
