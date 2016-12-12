@@ -72,4 +72,6 @@ $(document).ready(function () {
     
   });
 
+  $('section.news').fillNewsEvents('./dist/news/news-content.html');
+
 });
