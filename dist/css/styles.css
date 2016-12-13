@@ -5830,6 +5830,16 @@ button.close {
     background-position: center 58px;
     background-attachment: fixed; }
 
+  .video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 1; }
+
+  .video-background.video-background-hidden {
+    opacity: 0; }
+
   main {
     padding-top: 90px; }
 
@@ -5841,7 +5851,7 @@ button.close {
     transition-duration: 1.5s;
     transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95); }
   section h2 {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     text-align: center; }
   section .thumbnail {
     max-width: 768px;
@@ -5912,8 +5922,7 @@ button.close {
     left: 0;
     right: 0;
     max-width: 1440px;
-    z-index: 150;
-    box-shadow: 0 77px 80px rgba(0, 0, 0, 0.6); }
+    z-index: 150; }
 
   .header-top {
     position: relative;
@@ -6058,8 +6067,7 @@ button.close {
     cursor: pointer; }
   section.advertisers h2 {
     position: relative;
-    margin-top: -50px;
-    margin-bottom: 20px;
+    margin: 0;
     text-shadow: 0 0 3px black;
     z-index: 100; }
   section.advertisers h3 {
@@ -6148,8 +6156,7 @@ button.close {
     cursor: pointer; }
   section.publishers h2 {
     position: relative;
-    margin-top: -50px;
-    margin-bottom: 20px;
+    margin: 0;
     text-shadow: 0 0 3px black;
     z-index: 100; }
   section.publishers h3 {
@@ -6452,17 +6459,31 @@ button.close {
     section.news .panel-body p, section.events .panel-body p {
       font-family: AzoSansLight;
       color: #fff; }
-    section.news .news__link-title, section.events .news__link-title {
+      section.news .panel-body p .read-more, section.events .panel-body p .read-more {
+        color: #fff;
+        text-decoration: underline; }
+        section.news .panel-body p .read-more:hover, section.events .panel-body p .read-more:hover {
+          text-decoration: none; }
+    section.news .panel-body a, section.events .panel-body a {
+      color: #fff;
+      text-decoration: underline; }
+      section.news .panel-body a:hover, section.events .panel-body a:hover {
+        text-decoration: none; }
+    section.news .link-title a, section.events .link-title a {
       display: block;
       margin: 10px 0;
       text-decoration: underline;
       font-family: AzoSansRegular;
       font-size: 14px;
-      color: #fff200; } }
+      color: #fff200; }
+      section.news .link-title a:hover, section.events .link-title a:hover {
+        text-decoration: none; } }
 @media screen and (min-width: 768px) {
+  section.news h2, section.events h2 {
+    margin-bottom: 40px; }
   section.news h5, section.events h5 {
     font-size: 17px; }
-  section.news .news__link-title, section.events .news__link-title {
+  section.news .link-title a, section.events .link-title a {
     font-family: AzoSansLight;
     font-size: 24px; }
   section.news .panel-body p, section.events .panel-body p {

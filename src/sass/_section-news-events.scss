@@ -24,16 +24,40 @@
       p {
         font-family: AzoSansLight;
         color: #fff;
+
+        .read-more {
+          color: #fff;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+      }
+
+      a {
+        color: #fff;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
 
-    .news__link-title {
+    .link-title a {
       display: block;
       margin: 10px 0;
       text-decoration: underline;
       font-family: AzoSansRegular;
       font-size: 14px;
       color: #fff200;
+      
+      &:hover {
+        text-decoration: none;
+      }
+
     }
 
   }
@@ -44,11 +68,15 @@
 
   section.news, section.events {
 
+    h2 {
+      margin-bottom: 40px;
+    }
+
     h5 {
       font-size: 17px;
     }
 
-    .news__link-title {
+    .link-title a {
       font-family: AzoSansLight;
       font-size: 24px;
     }

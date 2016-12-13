@@ -38,6 +38,13 @@ $(document).ready(function () {
       sectionsColor: ['', '', '', '', '', '', '', '', '', '', '#000']
     });
 
+    $('#video-background').on('pause', function (event) {
+      $(this).fadeOut(1000, function () {
+        $(this).remove();
+      });
+      $('.wrapper').removeClass('invisible');
+    });
+
   }
 
   var isDesktopWidth = function () {
@@ -72,6 +79,7 @@ $(document).ready(function () {
     
   });
 
-  $('section.news').fillNewsEvents('./dist/news/news-content.html');
+  $('section.news').fillNewsEvents('./dist/news/news-content.html', 'news');
+  $('section.events').fillNewsEvents('./dist/events/events-content.html', 'events');
 
 });
