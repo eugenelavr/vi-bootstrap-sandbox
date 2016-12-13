@@ -20,6 +20,11 @@
           background: transparent;
           border: none;
         }
+
+        &:first-child {
+          margin-top: 0;
+        }
+
       }
 
       a {
@@ -276,7 +281,7 @@
 
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (min-width: 768px) and (max-height: 900px) {
 
   section.contact {
     
