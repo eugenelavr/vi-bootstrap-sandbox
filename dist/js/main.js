@@ -61,6 +61,8 @@ $(document).ready(function () {
 
     startDesktop();
 
+  } else {
+    $('.wrapper').removeClass('invisible');
   }
 
   window.addEventListener('resize', function () {
