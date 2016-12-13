@@ -90,3 +90,15 @@
   }
 
 }
+
+@media screen and (max-height: 900px) {
+
+  section.news {
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+  }
+
+}

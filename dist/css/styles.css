@@ -6502,6 +6502,9 @@ button.close {
     font-size: 24px; }
   section.news .panel-body p, section.events .panel-body p {
     font-size: 15px; } }
+@media screen and (max-height: 900px) {
+  section.news h2 {
+    margin-bottom: 0; } }
 @media screen and (min-width: 320px) {
   section.contact {
     position: relative; }
@@ -6649,6 +6652,9 @@ button.close {
       position: relative;
       margin-top: -130px;
       z-index: 100; } }
+@media screen and (max-height: 900px) {
+  section.contact h2 {
+    margin-bottom: -120px; } }
 @media screen and (min-width: 992px) {
   section.contact .cities .cities__new-york {
     top: 206px;
