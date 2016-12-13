@@ -28,6 +28,7 @@
   }
 
   section {
+    margin-bottom: 150px;
 
     * {
       transition: transform, opacity, width, height, margin;
@@ -87,6 +88,7 @@
   }
 
   section {
+    margin-bottom: 0;
 
     h2 {
       font-size: 40px;
@@ -98,6 +100,19 @@
       }
     }
 
+  }
+
+  .section[data-anchor="contact"] {
+    box-shadow: 150px 0 #000, -150px 0 #000;
+  }
+
+  .bottom-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70vh;
+    background-color: olive;
   }
 
   #fp-nav ul li, .fp-slidesNav ul li {

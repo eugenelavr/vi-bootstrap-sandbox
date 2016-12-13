@@ -17,11 +17,36 @@ $(document).ready(function () {
 
     $('#team_veel').veel({});
 
+  }
+
+  var isDesktopWidth = function () {
+
+    if (document.body.clientWidth >= 768) {
+      return true;
+    } else {
+      return false;
+    }
+
+  };
+
+  if (isDesktopWidth()) {
+
+    $('#video-background').removeClass('hidden');
+    $('#video-background').one('pause', function (event) {
+      $(this).fadeOut(1000, function () {
+        $(this).remove();
+      });
+      $('.wrapper').removeClass('invisible');
+    });
+
     $('#fullpage').fullpage({
       css3: true,
       navigation: true,
       keyboardScrolling: true,
-      responsiveWidth: 768,
+      // responsiveWidth: 768,
+      afterResponsive: function (isResponsive) {
+        
+      },
       navigationTooltips: [
         'home', 
         'intro', 
@@ -38,27 +63,6 @@ $(document).ready(function () {
       sectionsColor: ['', '', '', '', '', '', '', '', '', '', '#000']
     });
 
-    $('#video-background').on('pause', function (event) {
-      $(this).fadeOut(1000, function () {
-        $(this).remove();
-      });
-      $('.wrapper').removeClass('invisible');
-    });
-
-  }
-
-  var isDesktopWidth = function () {
-
-    if (document.body.clientWidth >= 768) {
-      return true;
-    } else {
-      return false;
-    }
-
-  };
-
-  if (isDesktopWidth()) {
-
     startDesktop();
 
   } else {
@@ -67,16 +71,20 @@ $(document).ready(function () {
 
   window.addEventListener('resize', function () {
 
-    if (!isDesktopWidth()) {
+    // if (!isDesktopWidth() && $.fn.fullpage.setAllowScrolling) {
 
-      console.log('bingo');
-      // $.fn.fullpage.setMouseWheelScrolling(false);
-      $.fn.fullpage.setAllowScrolling(false);
+    //   console.log('bingo');
+    //   // $.fn.fullpage.setMouseWheelScrolling(false);
+    //   $.fn.fullpage.setAllowScrolling(false);
 
-    } else {
+    // } else {
 
+    //   startDesktop();
+
+    // }
+
+    if (isDesktopWidth) {
       startDesktop();
-
     }
     
   });

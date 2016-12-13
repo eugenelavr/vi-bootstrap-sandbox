@@ -5834,8 +5834,7 @@ button.close {
     position: relative;
     width: 100%;
     height: 100%;
-    z-index: 9999;
-    opacity: 1; }
+    z-index: 9999; }
 
   .video-background.video-background-hidden {
     opacity: 0; }
@@ -5846,28 +5845,30 @@ button.close {
   ul {
     list-style-type: none; }
 
-  section * {
-    transition: transform, opacity, width, height, margin;
-    transition-duration: 1.5s;
-    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95); }
-  section h2 {
-    margin-bottom: 70px;
-    text-align: center; }
-  section .thumbnail {
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto; }
-    section .thumbnail h3 {
-      margin-left: -15px;
-      margin-right: -15px;
+  section {
+    margin-bottom: 150px; }
+    section * {
+      transition: transform, opacity, width, height, margin;
+      transition-duration: 1.5s;
+      transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+    section h2 {
+      margin-bottom: 70px;
       text-align: center; }
-    section .thumbnail p {
-      font-family: AzoSansLight;
-      font-size: 15px;
-      text-align: center; }
-    section .thumbnail img {
-      width: 100px;
-      height: 100px; }
+    section .thumbnail {
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto; }
+      section .thumbnail h3 {
+        margin-left: -15px;
+        margin-right: -15px;
+        text-align: center; }
+      section .thumbnail p {
+        font-family: AzoSansLight;
+        font-size: 15px;
+        text-align: center; }
+      section .thumbnail img {
+        width: 100px;
+        height: 100px; }
 
   a.thumbnail:hover {
     border: none; } }
@@ -5881,10 +5882,23 @@ button.close {
     background-size: contain;
     box-shadow: inset 0 0 115px 88px rgba(0, 0, 0, 0.6); }
 
-  section h2 {
-    font-size: 40px; }
-  section .thumbnail p {
-    font-size: 16px; }
+  section {
+    margin-bottom: 0; }
+    section h2 {
+      font-size: 40px; }
+    section .thumbnail p {
+      font-size: 16px; }
+
+  .section[data-anchor="contact"] {
+    box-shadow: 150px 0 #000, -150px 0 #000; }
+
+  .bottom-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70vh;
+    background-color: olive; }
 
   #fp-nav ul li, .fp-slidesNav ul li {
     margin: 10px;
@@ -6490,10 +6504,9 @@ button.close {
     font-size: 15px; } }
 @media screen and (min-width: 320px) {
   section.contact {
-    position: relative;
-    padding-top: 100px; }
+    position: relative; }
     section.contact h2 {
-      margin-bottom: 0; }
+      margin-bottom: 70px; }
     section.contact .nav-tabs {
       border-bottom: none; }
       section.contact .nav-tabs li {
@@ -6574,8 +6587,10 @@ button.close {
 @media screen and (min-width: 768px) {
   section.contact h2 {
     position: relative;
-    margin-bottom: -90px;
+    margin-bottom: 0;
     z-index: 100; }
+  section.contact .cities {
+    margin-bottom: 40px; }
   section.contact footer .row:first-child {
     border-top: none; }
   section.contact .map {
@@ -6600,7 +6615,7 @@ button.close {
       text-align: right; } }
 @media screen and (min-width: 768px) {
   section.contact {
-    box-shadow: 0 0 1px 150px black; }
+    padding-top: 100px; }
     section.contact .cities h3 {
       font-size: 15px; }
     section.contact .cities .cities__new-york {

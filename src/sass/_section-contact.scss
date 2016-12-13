@@ -2,10 +2,9 @@
 
   section.contact {
     position: relative;
-    padding-top: 100px;
 
     h2 {
-      margin-bottom: 0;
+      margin-bottom: 70px;
     }
 
     .nav-tabs {
@@ -150,8 +149,12 @@
 
     h2{
       position: relative;
-      margin-bottom: -90px;
+      margin-bottom: 0;
       z-index: 100;
+    }
+
+    .cities {
+      margin-bottom: 40px;
     }
 
     footer {
@@ -185,67 +188,6 @@
 
     }
 
-    // .modal {
-    //   margin-top: 392px;
-    // }
-
-    // .modal-content {
-    //   border-radius: 0;
-    //   background: transparent;
-    // }
-
-    // .modal-title {
-    //   color: #fff200;
-    // }
-
-    // .modal-header {
-    //   padding: 0;
-
-    //   h4 {
-    //     font-family: AzoSansBold;
-    //     font-size: 21px;
-    //     line-height: 0.6;
-    //   }
-
-    //   .close {
-    //     opacity: 1;
-    //     text-shadow: none;
-    //     color: #fff200;
-    //     font-family: AzoSansLight;
-    //     font-size: 32px;
-    //     line-height: 0.6;
-    //     font-weight: normal;
-    //   }
-    // }
-
-    // .modal-body {
-    //   border-bottom: 1px solid #fff;
-    //   padding: 6px 0;
-    //   background: #000;
-    //   // box-shadow: 0 0 60px 25px #000;      
-
-    //   h5 {
-    //     // margin-bottom: 25px;
-    //     font-family: AzoSansRegular;
-    //     font-size: 16px;
-    //   }
-      
-    //   img {
-    //     width: 100%;
-    //   }
-
-    //   p {
-    //     font-family: AzoSansLight;
-    //     font-size: 16px;
-    //   }
-
-    //   a {
-    //     color: #fff;
-    //     text-decoration: underline;
-    //   }
-      
-    // }
-
     footer {
 
       h6 {
@@ -270,7 +212,8 @@
 @media screen and (min-width:768px) {
 
   section.contact {
-    box-shadow: 0 0 1px 150px rgb(0,0,0);
+    // box-shadow: 0 0 1px 150px rgb(0,0,0);
+    padding-top: 100px;
 
     .cities {
 
