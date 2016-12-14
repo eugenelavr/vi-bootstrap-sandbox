@@ -819,7 +819,12 @@
 
                 <div class="row policy">
                   <div class="col-xs-12 col-sm-6">
-                    <a href="#">Privacy Policy</a><span> | </span><a href="#">Terms &#38; Conditions</a>
+                    <div class="visible-xs-inline">
+                      <a href="https://www.vi.ai/privacy-policy-post/">Privacy Policy</a><span> | </span><a href="https://www.vi.ai/advertiser-terms-and-conditions-post/">Terms &#38; Conditions</a>
+                    </div>
+                    <span class="hidden-xs">
+                      <a data-toggle="modal" data-target="#privacyPolicy" href="">Privacy Policy</a><span> | </span><a data-toggle="modal" data-target="#terms" href="">Terms &#38; Conditions</a>                    
+                    </span>
                   </div>
                   <div class="col-xs-12 col-sm-6">&#169; 2016 vi video intelligence. All rights reserved.</div>
                 </div>
@@ -832,191 +837,206 @@
         </main>
 
         <!--MODALS-->
-        <div class="modals-map">
-          <div class="modal fade" id="newyork_modal" tabindex="-1" role="dialog" aria-labelledby="newyork_modalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="newyorkLabel">New York</h4>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <h5>Sales office</h5>
-                      <p>
-                        Email: <a href="mailto:ny@vi.ai">ny@vi.ai</a>                              
-                      </p>
-                    </div>
-                    <div class="col-sm-7">
-                      <img src="./dist/images/offices/New-York.png" alt="New-York">
+        <div class="modals">
+          <div class="modals__map">
+            <div class="modal fade" id="newyork_modal" tabindex="-1" role="dialog" aria-labelledby="newyork_modalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="newyorkLabel">New York</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <h5>Sales office</h5>
+                        <p>
+                          Email: <a href="mailto:ny@vi.ai">ny@vi.ai</a>                              
+                        </p>
+                      </div>
+                      <div class="col-sm-7">
+                        <img src="./dist/images/offices/New-York.png" alt="New-York">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="modal fade" id="london_modal" tabindex="-1" role="dialog" aria-labelledby="london_modalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="londonLabel">London</h4>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <h5>Sales office</h5>
-                      <p>
-                        2 Eastbourne Terrace
-                        <br/>
-                        London W2 6LG
-                        <br/>
-                        United Kingdom
-                        <br/>
-                        Email: <a href="mailto:ldn@vi.ai">ldn@vi.ai</a>                           
-                      </p>
-                    </div>
-                    <div class="col-sm-7">
-                      <img src="./dist/images/offices/London.png" alt="London">
+            <div class="modal fade" id="london_modal" tabindex="-1" role="dialog" aria-labelledby="london_modalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="londonLabel">London</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <h5>Sales office</h5>
+                        <p>
+                          2 Eastbourne Terrace
+                          <br/>
+                          London W2 6LG
+                          <br/>
+                          United Kingdom
+                          <br/>
+                          Email: <a href="mailto:ldn@vi.ai">ldn@vi.ai</a>                           
+                        </p>
+                      </div>
+                      <div class="col-sm-7">
+                        <img src="./dist/images/offices/London.png" alt="London">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="modal fade" id="zurich_modal" tabindex="-1" role="dialog" aria-labelledby="zurich_modalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="zurichLabel">Zurich</h4>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <h5>Head office</h5>
-                      <p>
-                        Muhlebachstr. 162
-                        <br/>
-                        CH-8008 Zurich
-                        <br/>
-                        Switzerland
-                      </p>
-                      <p>
-                        Tel: <a href="tel:+41445652000">+41 44 565 2000</a>                              
-                      </p>
-                      <p>
-                        Email: <a href="mailto:ldn@vi.ai">ldn@vi.ai</a>                               
-                      </p>
-                      <p>
-                        <a href="https://www.google.ch/maps/place/Viewster+AG/@47.3571635,8.5558632,17z/data=!3m1!4b1!4m2!3m1!1s0x479aa748ee241ef7:0xcb252aac011c6d55" target="_blank">Directions</a>                          
-                      </p>
-                    </div>
-                    <div class="col-sm-7">
-                      <img src="./dist/images/offices/Zurich.png" alt="Zurich">
+            <div class="modal fade" id="zurich_modal" tabindex="-1" role="dialog" aria-labelledby="zurich_modalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="zurichLabel">Zurich</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <h5>Head office</h5>
+                        <p>
+                          Muhlebachstr. 162
+                          <br/>
+                          CH-8008 Zurich
+                          <br/>
+                          Switzerland
+                        </p>
+                        <p>
+                          Tel: <a href="tel:+41445652000">+41 44 565 2000</a>                              
+                        </p>
+                        <p>
+                          Email: <a href="mailto:ldn@vi.ai">ldn@vi.ai</a>                               
+                        </p>
+                        <p>
+                          <a href="https://www.google.ch/maps/place/Viewster+AG/@47.3571635,8.5558632,17z/data=!3m1!4b1!4m2!3m1!1s0x479aa748ee241ef7:0xcb252aac011c6d55" target="_blank">Directions</a>                          
+                        </p>
+                      </div>
+                      <div class="col-sm-7">
+                        <img src="./dist/images/offices/Zurich.png" alt="Zurich">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="modal fade" id="kiev_modal" tabindex="-1" role="dialog" aria-labelledby="kiev_modalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="kievLabel">Kiev</h4>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <h5>Development and data science</h5>
-                      <p>
-                        Email: <a href="mailto:kv@vi.ai">kv@vi.ai</a>                           
-                      </p>
-                    </div>
-                    <div class="col-sm-7">
-                      <img src="./dist/images/offices/Kiev.png" alt="Kiev">
+            <div class="modal fade" id="kiev_modal" tabindex="-1" role="dialog" aria-labelledby="kiev_modalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="kievLabel">Kiev</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <h5>Development and data science</h5>
+                        <p>
+                          Email: <a href="mailto:kv@vi.ai">kv@vi.ai</a>                           
+                        </p>
+                      </div>
+                      <div class="col-sm-7">
+                        <img src="./dist/images/offices/Kiev.png" alt="Kiev">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="modal fade" id="timisoara_modal" tabindex="-1" role="dialog" aria-labelledby="timisoara_modalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="timisoaraLabel">Timisoara</h4>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <h5>Operations office</h5>
-                      <p>
-                        Strada 20 Decembrie 1989
-                        <br/>
-                        300029 Timisoara
-                        <br/>
-                        Romania
-                      </p>
-                      <p>
-                        Email: <a href="mailto:tm@vi.ai">tm@vi.ai</a>                           
-                      </p>
-                      <p>
-                        <a href="https://www.google.com/maps/place/Strada+20+Decembrie+1989+2,+Timi%C8%99oara,+%D0%A0%D1%83%D0%BC%D1%83%D0%BD%D1%96%D1%8F/@45.7516419,21.2248753,17z/data=!3m1!4b1!4m2!3m1!1s0x47455d81c1a036ff:0x3dd6458cf24f40a3" target="_blank">Directions</a>
-                      </p>
-                    </div>
-                    <div class="col-sm-7">
-                      <img src="./dist/images/offices/Timisoara.png" alt="Timisoara">
+            <div class="modal fade" id="timisoara_modal" tabindex="-1" role="dialog" aria-labelledby="timisoara_modalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="timisoaraLabel">Timisoara</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <h5>Operations office</h5>
+                        <p>
+                          Strada 20 Decembrie 1989
+                          <br/>
+                          300029 Timisoara
+                          <br/>
+                          Romania
+                        </p>
+                        <p>
+                          Email: <a href="mailto:tm@vi.ai">tm@vi.ai</a>                           
+                        </p>
+                        <p>
+                          <a href="https://www.google.com/maps/place/Strada+20+Decembrie+1989+2,+Timi%C8%99oara,+%D0%A0%D1%83%D0%BC%D1%83%D0%BD%D1%96%D1%8F/@45.7516419,21.2248753,17z/data=!3m1!4b1!4m2!3m1!1s0x47455d81c1a036ff:0x3dd6458cf24f40a3" target="_blank">Directions</a>
+                        </p>
+                      </div>
+                      <div class="col-sm-7">
+                        <img src="./dist/images/offices/Timisoara.png" alt="Timisoara">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="modal fade" id="sydney_modal" tabindex="-1" role="dialog" aria-labelledby="sydney_modalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="sydneyLabel">Sydney</h4>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <h5>Sales office</h5>
-                      <p>
-                        Email: <a href="mailto:sy@vi.ai">sy@vi.ai</a>                           
-                      </p>
-                    </div>
-                    <div class="col-sm-7">
-                      <img src="./dist/images/offices/Sydney.png" alt="Sydney">
+            <div class="modal fade" id="sydney_modal" tabindex="-1" role="dialog" aria-labelledby="sydney_modalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="sydneyLabel">Sydney</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <h5>Sales office</h5>
+                        <p>
+                          Email: <a href="mailto:sy@vi.ai">sy@vi.ai</a>                           
+                        </p>
+                      </div>
+                      <div class="col-sm-7">
+                        <img src="./dist/images/offices/Sydney.png" alt="Sydney">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="modals-news">
-          <div id='popup-news' class="sub-popup">
-            <div id="spinner"></div>            
-            <div class="sub-popup-inner">
-              <div class="sub-popup-close">
-                <svg height="14" width="14">
-                  <line x1="0" y1="0" x2="14" y2="14" style="stroke:#ffea00;stroke-width:2"/>
-                  <line x1="14" y1="0" x2="0" y2="14" style="stroke:#ffea00;stroke-width:2"/>
-                </svg>
+          <div class="modals__news">
+            <div id='popup-news' class="sub-popup">
+              <div id="spinner"></div>            
+              <div class="sub-popup-inner">
+                <div class="sub-popup-close">
+                  <svg height="14" width="14">
+                    <line x1="0" y1="0" x2="14" y2="14" style="stroke:#ffea00;stroke-width:2"/>
+                    <line x1="14" y1="0" x2="0" y2="14" style="stroke:#ffea00;stroke-width:2"/>
+                  </svg>
+                </div>
+                <div class="sub-popup-content"></div>
               </div>
-              <div class="sub-popup-content"></div>
+            </div>
+          </div>
+          <div class="modals__privacy-terms hidden-xs">
+            <div class="modal fade" id="privacyPolicy" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="privacyPolicyLabel">Privacy Policy</h3>
+                  </div>
+                  <div class="modal-body"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1032,6 +1052,7 @@
     <script src="./dist/js/libs/jquery.fullpage.js"></script>
     <script src="./dist/js/popup.news.js"></script>
     <script src="./dist/js/news-events-filler.js"></script>
+    <script src="./dist/js/fill-privacy-terms.js"></script>
     <script src="./dist/js/main.js"></script> 
   </body>
 </html>

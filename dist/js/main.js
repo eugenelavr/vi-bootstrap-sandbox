@@ -43,10 +43,7 @@ $(document).ready(function () {
       css3: true,
       navigation: true,
       keyboardScrolling: true,
-      // responsiveWidth: 768,
-      afterResponsive: function (isResponsive) {
-        
-      },
+      normalScrollElements: '.modal',
       navigationTooltips: [
         'home', 
         'intro', 
@@ -91,5 +88,6 @@ $(document).ready(function () {
 
   $('section.news').fillNewsEvents('./dist/news/news-content.html', 'news');
   $('section.events').fillNewsEvents('./dist/events/events-content.html', 'events');
+  $('#privacyPolicy .modal-body').fillPrivacyTerms('./dist/privacy-policy.html');
 
 });

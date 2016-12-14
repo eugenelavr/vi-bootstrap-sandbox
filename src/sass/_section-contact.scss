@@ -134,6 +134,13 @@
           font-size: 15px;          
           color: #fff;
           text-decoration: underline;
+
+          &:hover, &:active, &:visited {
+            outline: none;
+            outline-color: transparent;
+            box-shadow: none; 
+          }
+
         }
 
         div:first-child {
