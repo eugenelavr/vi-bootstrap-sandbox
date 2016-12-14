@@ -5832,8 +5832,7 @@ button.close {
     background-image: url("./../../dist/images/background.jpg");
     background-size: 1440px 500px;
     background-repeat: no-repeat;
-    background-position: center 103px;
-    background-attachment: fixed;
+    background-position: center 0;
     z-index: -1; }
 
   .video-background {
