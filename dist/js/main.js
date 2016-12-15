@@ -2,6 +2,8 @@ $(document).ready(function () {
 
   var startDesktop = function () {
 
+    $('.wrapper').removeClass('hidden');    
+
     $('#advertiser_veel').veel({
       radius: 200,
       activeAngle: 0,
@@ -17,7 +19,7 @@ $(document).ready(function () {
 
     $('#team_veel').veel({});
 
-  }
+  };
 
   var isDesktopWidth = function () {
 
@@ -31,39 +33,74 @@ $(document).ready(function () {
 
   if (isDesktopWidth()) {
 
-    $('#video-background').removeClass('hidden');
-    $('#video-background').one('pause', function (event) {
-      $(this).fadeOut(1000, function () {
-        $(this).remove();
+    $('section.news').fillNewsEvents('./dist/news/news-content.html', 'news');
+    $('section.events').fillNewsEvents('./dist/events/events-content.html', 'events');
+    $('#privacyPolicy .modal-body').fillPrivacyTerms('./dist/privacy-policy.html');
+    $('#terms .modal-body').fillPrivacyTerms('./dist/terms.html');
+
+    if (window.location.href.includes('#')) {
+
+      startDesktop();       
+
+      $('#fullpage').fullpage({
+        css3: true,
+        navigation: true,
+        keyboardScrolling: true,
+        normalScrollElements: '.modal',
+        navigationTooltips: [
+          'home', 
+          'intro', 
+          'vi', 
+          'advertisers', 
+          'publishers', 
+          'servicelevels', 
+          'highlight',
+          'team',
+          'news',
+          'events',
+          'contact'
+        ],
+        sectionsColor: ['', '', '', '', '', '', '', '', '', '', '#000']
       });
-      $('.wrapper').removeClass('invisible');
+
+    } else {
+
+      $('#video-background').removeClass('hidden');
+
+      $('#video-background').one('pause', function (event) {
+        $(this).fadeOut(1000, function () {
+          $(this).remove();
+        });
+
+        startDesktop();        
+
+        $('#fullpage').fullpage({
+          css3: true,
+          navigation: true,
+          keyboardScrolling: true,
+          normalScrollElements: '.modal',
+          navigationTooltips: [
+            'home', 
+            'intro', 
+            'vi', 
+            'advertisers', 
+            'publishers', 
+            'servicelevels', 
+            'highlight',
+            'team',
+            'news',
+            'events',
+            'contact'
+          ],
+          sectionsColor: ['', '', '', '', '', '', '', '', '', '', '#000']
+        });
+
     });
 
-    $('#fullpage').fullpage({
-      css3: true,
-      navigation: true,
-      keyboardScrolling: true,
-      normalScrollElements: '.modal',
-      navigationTooltips: [
-        'home', 
-        'intro', 
-        'vi', 
-        'advertisers', 
-        'publishers', 
-        'servicelevels', 
-        'highlight',
-        'team',
-        'news',
-        'events',
-        'contact'
-      ],
-      sectionsColor: ['', '', '', '', '', '', '', '', '', '', '#000']
-    });
-
-    startDesktop();
+    }
 
   } else {
-    $('.wrapper').removeClass('invisible');
+    $('.wrapper').removeClass('hidden');
   }
 
   window.addEventListener('resize', function () {
@@ -86,8 +123,4 @@ $(document).ready(function () {
     
   });
 
-  $('section.news').fillNewsEvents('./dist/news/news-content.html', 'news');
-  $('section.events').fillNewsEvents('./dist/events/events-content.html', 'events');
-  $('#privacyPolicy .modal-body').fillPrivacyTerms('./dist/privacy-policy.html');
-  $('#terms .modal-body').fillPrivacyTerms('./dist/terms.html');
 });

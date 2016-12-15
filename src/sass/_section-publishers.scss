@@ -54,8 +54,10 @@
     .publishers-veel .wheel-item-image {
       width: 120px;
       height: 120px;
+      border-radius: 60px;
       margin: auto;
       background: center center/100% 100% no-repeat;
+      box-shadow: 0 0 44px rgba(0, 18, 255, 0.5);
     }
 
     .publishers-veel .active.circle {
@@ -68,6 +70,8 @@
     .publishers-veel .active .wheel-item-image {
       width: 300px;
       height: 300px;
+      border-radius: 150px;
+      box-shadow: 0 0 44px rgba(0, 18, 255, 0.5);
     }
 
     .publishers-veel .animate {

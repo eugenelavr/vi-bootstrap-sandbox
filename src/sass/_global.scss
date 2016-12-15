@@ -145,7 +145,7 @@
   }
 
   #fp-nav.right {
-    opacity: .2;
+    opacity: .14;
 
     &:hover {
       opacity: 1;
@@ -153,6 +153,7 @@
   }
 
   #fp-nav ul li .fp-tooltip {
+    top: 1px;
     font-family: AzoSansLight;
   }
 

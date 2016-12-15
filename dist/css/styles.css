@@ -5926,11 +5926,12 @@ button.close {
     margin: -8px 0 0 -8px; }
 
   #fp-nav.right {
-    opacity: .2; }
+    opacity: .14; }
     #fp-nav.right:hover {
       opacity: 1; }
 
   #fp-nav ul li .fp-tooltip {
+    top: 1px;
     font-family: AzoSansLight; }
 
   #fp-nav ul li .fp-tooltip.right {
@@ -6052,7 +6053,10 @@ button.close {
 @media screen and (min-width: 768px) {
   section.vi-in-numbers .row:last-child .caption {
     padding-top: 0;
-    margin-top: 42px; } }
+    margin-top: 42px; }
+  section.vi-in-numbers .row:first-child img {
+    border-radius: 50px;
+    box-shadow: 0 0 44px rgba(0, 18, 255, 0.5); } }
 @media screen and (min-width: 320px) {
   section.vi p {
     max-width: 540px;
@@ -6192,8 +6196,10 @@ button.close {
   section.publishers .publishers-veel .wheel-item-image {
     width: 120px;
     height: 120px;
+    border-radius: 60px;
     margin: auto;
-    background: center center/100% 100% no-repeat; }
+    background: center center/100% 100% no-repeat;
+    box-shadow: 0 0 44px rgba(0, 18, 255, 0.5); }
   section.publishers .publishers-veel .active.circle {
     width: 300px;
     height: 300px;
@@ -6201,7 +6207,9 @@ button.close {
     cursor: default; }
   section.publishers .publishers-veel .active .wheel-item-image {
     width: 300px;
-    height: 300px; }
+    height: 300px;
+    border-radius: 150px;
+    box-shadow: 0 0 44px rgba(0, 18, 255, 0.5); }
   section.publishers .publishers-veel .animate {
     transition: all 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
   section.publishers .publishers-veel .wheel-item-text {
@@ -6226,7 +6234,10 @@ button.close {
     color: #fff; } }
 @media screen and (min-width: 768px) {
   section.service-levels .service-levels__intro p {
-    font-size: 20px; } }
+    font-size: 20px; }
+  section.service-levels img {
+    border-radius: 50px;
+    box-shadow: 0 0 44px rgba(0, 18, 255, 0.5); } }
 @media screen and (min-width: 320px) {
   section.highlight {
     color: #000; }
@@ -6619,7 +6630,9 @@ button.close {
     padding: 0; }
   section.contact .row .col-sm-6 img {
     width: 50px;
-    height: 50px; }
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 44px rgba(0, 18, 255, 0.5); }
   section.contact footer h6 {
     font-family: AzoSansLight;
     font-size: 15px; }

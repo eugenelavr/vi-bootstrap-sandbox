@@ -7,6 +7,15 @@
       margin-top: 42px;
     }
 
+    .row:first-child {
+
+      img {
+        border-radius: 50px;
+        box-shadow: 0 0 44px rgba(0, 18, 255, 0.5);
+      }
+
+    }
+
   }
 
 }
