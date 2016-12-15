@@ -2,20 +2,24 @@ $(document).ready(function () {
 
   var fillContent = function (url) {
 
-    var $element = $(this);
+    if (this) {
+      var elementToFill = this;
 
-    $.ajax(url).done(function (data) {
+      $.ajax(url).done(function (data) {
 
-      var $source = $(data).find('.entry-content');
-      $source.find('h2').each(function (index, element) {
-        var h4 = $('<h4>');
-        $(h4).html($(element).html());
-        $(element).replaceWith(h4);
+        var $source = $(data).find('.entry-content');
+        $source.find('h2').each(function (index, element) {
+          var h4 = $('<h4>');
+          $(h4).html($(element).html());
+          $(element).replaceWith(h4);
+        });
+
+        elementToFill.append($source);
+
       });
-
-      $element.append($source);
-
-    });
+    } else {
+      return;
+    }
 
   };
 

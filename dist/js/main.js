@@ -33,11 +33,6 @@ $(document).ready(function () {
 
   if (isDesktopWidth()) {
 
-    $('section.news').fillNewsEvents('./dist/news/news-content.html', 'news');
-    $('section.events').fillNewsEvents('./dist/events/events-content.html', 'events');
-    $('#privacyPolicy .modal-body').fillPrivacyTerms('./dist/privacy-policy.html');
-    $('#terms .modal-body').fillPrivacyTerms('./dist/terms.html');
-
     if (window.location.href.includes('#')) {
 
       startDesktop();       
@@ -122,5 +117,10 @@ $(document).ready(function () {
     }
     
   });
+
+    $('section.news').fillNewsEvents('./dist/news/news-content.html', 'news');
+    $('section.events').fillNewsEvents('./dist/events/events-content.html', 'events');
+    $('#privacyPolicy .modal-body').fillPrivacyTerms('./dist/privacy-policy.html');
+    $('#terms .modal-body').fillPrivacyTerms('./dist/terms.html');
 
 });
