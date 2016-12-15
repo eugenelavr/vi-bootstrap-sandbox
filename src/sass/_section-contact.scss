@@ -135,7 +135,7 @@
           color: #fff;
           text-decoration: underline;
 
-          &:hover, &:active, &:visited {
+          &:hover, &:active, &:visited, &:focus {
             outline: none;
             outline-color: transparent;
             box-shadow: none; 

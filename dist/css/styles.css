@@ -6592,7 +6592,7 @@ button.close {
           font-size: 15px;
           color: #fff;
           text-decoration: underline; }
-          section.contact footer .policy a:hover, section.contact footer .policy a:active, section.contact footer .policy a:visited {
+          section.contact footer .policy a:hover, section.contact footer .policy a:active, section.contact footer .policy a:visited, section.contact footer .policy a:focus {
             outline: none;
             outline-color: transparent;
             box-shadow: none; }
