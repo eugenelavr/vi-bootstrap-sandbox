@@ -90,10 +90,12 @@ $(document).ready(function () {
 
         $('#teamMobile').find('.col-xs-4').on('click', function (event) {
           var $container = $('#teamMobile');
-          var $activeItem = $container.find('#teamActiveItem');
-          var activeItemContent = $activeItem.find('[data-team="inactive"]').html();
-          var $inActiveItem = $(this);
+          var $activeItem = $container.find('#teamActiveItem').clone();
+          var activeItemContent = $activeItem.html();
+          var 
+          var $inActiveItem = $(this).clone();
           var inActiveContent = $inActiveItem.find('[data-team="active"]').html();
+          console.log(inActiveContent);
 
           $activeItem.html( inActiveContent );
 
