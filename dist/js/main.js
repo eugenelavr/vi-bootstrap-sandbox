@@ -85,6 +85,23 @@ $(document).ready(function () {
 
   } else {
     $('.wrapper').removeClass('hidden');
+
+      (function () {
+
+        $('#teamMobile').find('.col-xs-4').on('click', function (event) {
+          var $container = $('#teamMobile');
+          var $activeItem = $container.find('#teamActiveItem');
+          var activeItemContent = $activeItem.find('[data-team="inactive"]').html();
+          var $inActiveItem = $(this);
+          var inActiveContent = $inActiveItem.find('[data-team="active"]').html();
+
+          $activeItem.html( inActiveContent );
+
+          $inActiveItem.find('.thumbnail').html( activeItemContent );
+        });
+
+    })();
+     
   }
 
   window.addEventListener('resize', function () {

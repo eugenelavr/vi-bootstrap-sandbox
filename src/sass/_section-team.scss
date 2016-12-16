@@ -2,7 +2,15 @@
 
   section.team {
 
+    [data-team="active"], [data-team="inactive"] {
+      display: none;
+    }
+
     .thumbnail {
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+
       h4 {
         font-family: AzoSansLight;
         font-size: 12px;

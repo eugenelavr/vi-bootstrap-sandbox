@@ -6265,6 +6265,10 @@ button.close {
     margin-right: auto;
     padding: 47px 88px; } }
 @media screen and (min-width: 320px) {
+  section.team [data-team="active"], section.team [data-team="inactive"] {
+    display: none; }
+  section.team .thumbnail:hover, section.team .thumbnail:focus {
+    text-decoration: none; }
   section.team .thumbnail h4 {
     font-family: AzoSansLight;
     font-size: 12px;
