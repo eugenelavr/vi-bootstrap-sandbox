@@ -56,7 +56,7 @@ $(document).ready(function () {
 
   };
 
-  if (isDesktopWidth()) {
+  if ( !isMobile.any && isDesktopWidth() ) {
 
     if (window.location.href.indexOf('#') !== -1) {
 
@@ -83,7 +83,7 @@ $(document).ready(function () {
 
     }
 
-  } else {
+  } else if (isMobile.any) {
     $('.wrapper').removeClass('hidden');
 
       (function () {
