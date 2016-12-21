@@ -6283,6 +6283,8 @@ button.close {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px; }
+    section.team .thumbnail-main .team-icon--small {
+      display: none; }
     section.team .thumbnail-main h3 {
       color: #fff200; }
     section.team .thumbnail-main p {
@@ -6305,7 +6307,9 @@ button.close {
   section.team .team__small-icons {
     max-width: 500px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+    section.team .team__small-icons .team-icon--full {
+      display: none; } }
 @media screen and (min-width: 768px) {
   section.team {
     margin-top: -7vh;

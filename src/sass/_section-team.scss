@@ -32,6 +32,10 @@
       margin-right: auto;
       margin-bottom: 70px;
 
+      .team-icon--small {
+        display: none;
+      }
+
       h3 {
         color: #fff200;
       }
@@ -70,6 +74,10 @@
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
+
+      .team-icon--full {
+        display: none;
+      }
     }
 
   }

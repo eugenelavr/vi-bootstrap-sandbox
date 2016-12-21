@@ -91,15 +91,14 @@ $(document).ready(function () {
         $('#teamMobile').find('.col-xs-4').on('click', function (event) {
           var $container = $('#teamMobile');
           var $activeItem = $container.find('#teamActiveItem').clone();
-          var activeItemContent = $activeItem.html();
-          var 
+          var activeItemContent = $activeItem.find('.team-icon--full').html();
           var $inActiveItem = $(this).clone();
-          var inActiveContent = $inActiveItem.find('[data-team="active"]').html();
-          console.log(inActiveContent);
+          var inActiveContent = $inActiveItem.find('.team-icon--full').html();
 
-          $activeItem.html( inActiveContent );
+          $('#teamActiveItem .team-icon--full').html(inActiveContent);
+          $(this).find('.thumbnail').html( $activeItem.find('.team-icon--small').html() );
+          $(this).find('.team-icon--full').html( activeItemContent );
 
-          $inActiveItem.find('.thumbnail').html( activeItemContent );
         });
 
     })();
