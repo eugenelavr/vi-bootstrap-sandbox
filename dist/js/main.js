@@ -58,7 +58,7 @@ $(document).ready(function () {
 
   if (isDesktopWidth()) {
 
-    if (window.location.href.includes('#')) {
+    if (window.location.href.indexOf('#') !== -1) {
 
       startDesktop({
         veel: true,
